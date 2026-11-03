@@ -1,0 +1,16 @@
+﻿PANDUAN STRUKTUR FOTO PROYEK 3LANGIT DESIGN
+============================================
+
+STATUS SAAT INI:
+[V] 1. Folder "1-architecture"        -> SUDAH AKTIF (29 foto: arch-1.jpg s/d arch-29.jpg)
+[V] 2. Folder "2-masterplan"          -> SUDAH AKTIF (19 foto: mp-1.jpg s/d mp-19.jpg)
+[V] 3. Folder "3-interior"            -> SUDAH AKTIF (12 foto: int-1.jpg s/d int-12.jpg)
+[V] 4. Folder "4-design-build"        -> SUDAH AKTIF (5 foto: db-1.jpg s/d db-5.jpg)
+[V] 5. Folder "5-land-development"    -> SUDAH AKTIF (18 foto: land-1.jpg s/d land-18.jpg)
+[ ] 6. Folder "6-digital"             -> Menunggu foto (dig-1.jpg, dig-2.jpg, dst.)
+
+CATATAN PENGGUNAAN:
+- Anda tidak harus mengisi semuanya sekaligus, bisa dicicil bertahap.
+- Format yang didukung: .jpg, .jpeg, .png, .webp.
+- Setelah meletakkan foto baru, cukup refresh halaman (tekan F5) di browser!
+- Mengklik salah satu kartu proyek di website sekarang akan otomatis membuka foto resolusi tinggi dalam modal popup.

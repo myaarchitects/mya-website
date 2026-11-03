@@ -1,0 +1,19 @@
+PETUNJUK FOTO PROYEK PENGEMBANGAN LAHAN (5-LAND-DEVELOPMENT)
+==========================================================
+
+Folder ini khusus untuk foto-foto hasil karya bidang Konsultan Pengembangan Lahan (Land Development Advisory).
+
+Penamaan File:
+- land-1.jpg  -> Proyek Land Development 1
+- land-2.jpg  -> Proyek Land Development 2
+- land-3.jpg  -> Proyek Land Development 3
+- land-4.jpg  -> Proyek Land Development 4
+- land-5.jpg  -> Proyek Land Development 5
+... dan seterusnya (land-6, land-7, dst.)
+
+Format yang didukung:
+- .jpg, .jpeg, .png, .webp
+
+Rekomendasi Ukuran:
+- Rasio 1:1 (persegi, misal 1200 x 1200 px) atau 4:3 / 16:9
+- Ukuran file sekitar 300 KB - 1.5 MB per foto agar web cepat dimuat.

@@ -1,0 +1,19 @@
+PETUNJUK FOTO PROYEK MASTER PLAN (2-MASTERPLAN)
+==============================================
+
+Folder ini khusus untuk foto-foto hasil karya bidang Perencanaan Induk / Kawasan (Master Plan).
+
+Penamaan File:
+- mp-1.jpg  -> Proyek Master Plan 1
+- mp-2.jpg  -> Proyek Master Plan 2
+- mp-3.jpg  -> Proyek Master Plan 3
+- mp-4.jpg  -> Proyek Master Plan 4
+- mp-5.jpg  -> Proyek Master Plan 5
+... dan seterusnya (mp-6, mp-7, dst.)
+
+Format yang didukung:
+- .jpg, .jpeg, .png, .webp
+
+Rekomendasi Ukuran:
+- Rasio 1:1 (persegi, misal 1200 x 1200 px) atau 4:3 / 16:9
+- Ukuran file sekitar 300 KB - 1.5 MB per foto agar web cepat dimuat.

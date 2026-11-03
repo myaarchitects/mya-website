@@ -1,0 +1,19 @@
+PETUNJUK FOTO PROYEK DIGITAL & AI (6-DIGITAL)
+==============================================
+
+Folder ini khusus untuk foto-foto hasil karya bidang Kecerdasan Digital / Produk Digital (Digital Product & Intelligence).
+
+Penamaan File:
+- dig-1.jpg  -> Proyek Digital 1
+- dig-2.jpg  -> Proyek Digital 2
+- dig-3.jpg  -> Proyek Digital 3
+- dig-4.jpg  -> Proyek Digital 4
+- dig-5.jpg  -> Proyek Digital 5
+... dan seterusnya (dig-6, dig-7, dst.)
+
+Format yang didukung:
+- .jpg, .jpeg, .png, .webp
+
+Rekomendasi Ukuran:
+- Rasio 1:1 (persegi, misal 1200 x 1200 px) atau 4:3 / 16:9
+- Ukuran file sekitar 300 KB - 1.5 MB per foto agar web cepat dimuat.

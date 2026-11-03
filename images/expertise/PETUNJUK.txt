@@ -1,0 +1,15 @@
+PETUNJUK MENGGANTI 6 FOTO EXPERTISE (KAPABILITAS):
+==================================================
+
+Folder ini menyimpan 6 foto untuk kotak keahlian/kapabilitas di website:
+
+1. exp-1.jpg  ->  Architecture (Arsitektur)
+2. exp-2.jpg  ->  Master Plan (Perencanaan Induk)
+3. exp-3.jpg  ->  Interior
+4. exp-4.jpg  ->  Design & Build (Desain & Bangun)
+5. exp-5.jpg  ->  Land Development Advisory (Pengembangan Lahan)
+6. exp-6.jpg  ->  Digital Product (Produk Digital)
+
+Format yang didukung: .jpg, .png, .webp
+
+Anda cukup mengganti (timpa / replace) file exp-1.jpg sampai exp-6.jpg dengan foto desain Anda sendiri, lalu refresh browser (F5)!

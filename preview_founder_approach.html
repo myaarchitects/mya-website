@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MYA Preview - Founder in About &amp; Relocated Approach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--line:rgba(255,255,255,.15);--mute:#9ca3af;--dim:#6b7280}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#000;color:#fff}
+body{background:#000;color:#fff;font:300 0.9375rem/1.9 'Inter',-apple-system,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none!important}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img{display:block}
+.wrap{max-width:1360px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
+.caps{font-size:0.8125rem;letter-spacing:.2em;text-transform:uppercase;font-weight:400}
+.link{font-size:0.625rem;letter-spacing:.2em;text-transform:uppercase;border:none!important;padding-bottom:0.25rem;color:var(--mute);transition:color .3s ease;display:inline-block}
+.link:hover{color:#fff!important}
+
+/* Section styling */
+section{border-bottom:1px solid var(--line);padding:clamp(3.5rem,6vh,5rem) 0}
+
+/* Top Preview Bar */
+.preview-nav{display:none!important}
+.preview-brand{font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;color:#fff;font-weight:400}
+.preview-actions{display:flex;gap:1rem;align-items:center}
+.btn-toggle{border:1px solid rgba(255,255,255,0.3);padding:0.35rem 0.85rem;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;border-radius:2px;color:var(--mute);transition:.2s}
+.btn-toggle.active{background:#fff;color:#000;border-color:#fff;font-weight:600}
+
+/* SECTION 1: ABOUT (Studio Leadership & Founder) */
+#about .wrap{display:flex;flex-direction:column;gap:clamp(2.5rem,4.5vh,3.5rem)}
+.about-cover{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:76rem;margin:0 auto}
+.about-cover-eyebrow{font-size:0.6875rem;letter-spacing:.28em;text-transform:uppercase;color:var(--dim);margin-bottom:0.65rem;display:block;text-align:center;font-weight:400}
+.about-cover-h{font:200 clamp(0.90rem,1.62vw,1.44rem)/1.35 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:0.5rem;text-align:center}
+
+/* Founder Leadership Spotlight */
+.founder-block{
+  display:grid;
+  grid-template-columns:clamp(240px, 22vw, 300px) 1fr;
+  gap:clamp(2.5rem, 4.5vw, 4.5rem);
+  align-items:center;
+  max-width:76rem;
+  width:100%;
+  margin:0 auto;
+  padding-bottom:clamp(2rem, 4vh, 3.25rem);
+  border-bottom:1px solid var(--line);
+}
+.founder-portrait-wrap{
+  width:100%;
+  aspect-ratio:3/4;
+  border:1px solid rgba(255,255,255,0.18);
+  border-radius:2px;
+  overflow:hidden;
+  background:#080808;
+  position:relative;
+  box-shadow:0 16px 45px rgba(0,0,0,0.65);
+}
+.founder-portrait-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top center;
+  filter:contrast(1.03) brightness(0.97);
+  display:block;
+}
+.founder-content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:left;
+}
+.founder-role{
+  font-size:clamp(0.6875rem, 0.78vw, 0.75rem);
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:var(--dim);
+  font-weight:500;
+  display:block;
+  margin-bottom:0.45rem;
+}
+.founder-name{
+  font-family:'Inter',-apple-system,sans-serif;
+  font-size:clamp(0.95rem, 1.36vw, 1.33rem);
+  font-weight:400;
+  letter-spacing:0.05em;
+  color:#fff;
+  margin:0 0 clamp(0.85rem, 1.5vh, 1.15rem) 0;
+  line-height:1.25;
+}
+.founder-quote{
+  font-family:'Inter',-apple-system,sans-serif;
+  font-size:clamp(0.9375rem, 1.15vw, 1.08rem);
+  font-weight:300;
+  line-height:1.8;
+  color:rgba(255,255,255,0.92);
+  margin:0 0 clamp(1rem, 1.8vh, 1.25rem) 0;
+  padding-left:clamp(1.25rem, 2vw, 1.75rem);
+  border-left:2px solid rgba(255,255,255,0.45);
+  font-style:italic;
+}
+.founder-subtext{
+  font-size:clamp(0.8125rem, 0.88vw, 0.875rem);
+  line-height:1.65;
+  color:var(--mute);
+  margin:0;
+}
+
+/* Our Story & Culture columns */
+.about-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:start;max-width:1240px;width:100%;margin:0 auto}
+.about-col h3{font-size:0.75rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);margin-bottom:0.65rem}
+.about-col p{font-size:clamp(0.875rem,1vw,0.95rem);line-height:1.7;color:rgba(255,255,255,.78);margin-bottom:0.85rem;font-weight:300}
+
+/* Institutional Exp Bar & Logos */
+.about-institutional-block{display:flex;flex-direction:column;gap:clamp(1.25rem,2.4vh,2rem);width:100%}
+.about-exp-bar{border-top:1px solid var(--line);padding-top:clamp(1.25rem,2.2vh,1.75rem);max-width:1240px;width:100%;margin:0 auto;display:grid;grid-template-columns:280px 1fr;gap:clamp(2rem,4vw,3.5rem);align-items:baseline}
+.about-exp-metric{display:flex;flex-direction:column}
+.about-exp-metric .exp-num{font:200 clamp(2.2rem,3.6vw,3.2rem)/1 'Inter',sans-serif;letter-spacing:.04em;color:#fff;margin-bottom:0.35rem}
+.about-exp-metric .exp-badge{font-size:0.6875rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);font-weight:500}
+.about-exp-bar .exp-txt{font-size:clamp(0.85rem,0.96vw,0.92rem);line-height:1.75;color:rgba(255,255,255,.75);font-weight:300;text-align:justify;text-justify:inter-word}
+.about-logos{width:100%;max-width:1240px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
+.about-logos-title{font-size:0.6875rem;letter-spacing:.26em;text-transform:uppercase;color:var(--dim);margin-bottom:clamp(0.85rem,1.5vh,1.35rem);display:block;font-weight:500}
+.about-logos-track{width:100%;display:flex;align-items:center;justify-content:space-between;gap:clamp(1rem,2vw,2.5rem);flex-wrap:nowrap}
+.about-logo-item{flex:1 1 0;min-width:0;display:flex;align-items:center;justify-content:center;height:clamp(34px,4.8vh,46px);transition:transform .3s ease,opacity .3s ease;opacity:0.65}
+.about-logo-item:hover{opacity:1;transform:scale(1.08)}
+.about-logo-item:first-child{justify-content:flex-start}
+.about-logo-item:last-child{justify-content:flex-end}
+.about-logo-img{max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain;display:block}
+.about-logo-img.bsd-scale{transform:scale(1.05);transform-origin:right center}
+.about-logo-img.binakarya-scale{transform:scale(1.2);transform-origin:center}
+
+/* SECTION 2: APPROACH (The Practice & Philosophy + ALUNA Framework) */
+#approach{
+  height:100vh;
+  height:100dvh;
+  min-height:100vh;
+  max-height:100vh;
+  padding-top:5.25rem;
+  padding-bottom:0;
+  padding-left:clamp(2rem, 5vw, 4rem);
+  padding-right:clamp(2rem, 5vw, 4rem);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position:relative;
+  background:#000;
+  box-sizing:border-box;
+  overflow:hidden;
+  scroll-margin-top:-5.5rem!important;
+}
+#approach .wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-evenly;
+  width:100%;
+  max-width:1360px;
+  height:100%;
+  max-height:100%;
+  flex:1;
+  box-sizing:border-box;
+  margin:0 auto;
+}
+
+.approach-cover{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  max-width:76rem;
+  margin:0 auto;
+  border-bottom:1px solid var(--line);
+  padding-bottom:clamp(0.75rem, 1.5vh, 1.25rem);
+  width:100%;
+  flex:0 0 auto;
+}
+.approach-eyebrow{
+  font-size:0.6875rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--dim);
+  margin-bottom:clamp(0.4rem, 0.8vh, 0.65rem);
+  display:block;
+  text-align:center;
+  font-weight:400;
+}
+.approach-wordmark-wrap{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(0.75rem, 1.8vw, 1.75rem);
+  max-width:100%;
+  margin:0 auto clamp(0.5rem, 1vh, 0.85rem) auto;
+}
+.approach-wordmark-wrap .wordmark-svg{
+  height:clamp(1.2rem, 1.8vw, 1.6rem);
+  width:auto;
+  fill:#fff;
+  display:block;
+}
+.approach-wordmark-wrap .wordmark-dot{
+  color:rgba(255, 255, 255, 0.6);
+  font-size:clamp(0.85rem, 1.4vw, 1.25rem);
+  line-height:1;
+}
+@media(max-width: 640px){
+  .approach-wordmark-wrap{gap:0.5rem}
+  .approach-wordmark-wrap .wordmark-svg{height:clamp(0.85rem, 3.4vw, 1.25rem)}
+}
+.approach-desc{
+  max-width:62rem;
+  font-size:clamp(0.84rem, 0.95vw, 0.96rem);
+  line-height:1.7;
+  color:rgba(255,255,255,.82);
+  font-weight:300;
+  margin:0 auto;
+  text-align:center;
+}
+.approach-desc strong{color:#fff;font-weight:600}
+.approach-healer{
+  display:block;
+  margin-top:clamp(0.35rem, 0.7vh, 0.65rem);
+  color:rgba(255,255,255,0.92);
+  font-weight:400;
+  font-style:italic;
+}
+
+.approach-framework-wrap{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  flex:0 0 auto;
+}
+.approach-framework-intro{
+  text-align:center;
+  margin-top:0;
+  margin-bottom:clamp(0.65rem, 1.3vh, 1.15rem);
+}
+.approach-framework-title{
+  font-size:0.6875rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--dim);
+  display:block;
+  margin-bottom:0.3rem;
+  font-weight:500;
+}
+.approach-sub{font:300 clamp(0.78rem,0.88vw,0.88rem)/1.55 'Inter',sans-serif;color:rgba(255,255,255,.65);letter-spacing:.05em;text-align:center;margin:0 auto;max-width:38rem}
+#approach .ag{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1.5rem,2.8vw,3.25rem);border:none!important;margin:0 auto;width:100%;justify-items:center}
+#approach .ag .ac{border:none!important;background:transparent!important;padding:0!important;min-height:auto!important;display:flex;flex-direction:column;align-items:center;text-align:center}
+#approach .ac:hover{background:transparent!important}
+#approach .ap-sym{width:100%;height:clamp(75px,9.5vh,110px);display:flex;align-items:center;justify-content:center;margin-bottom:clamp(0.45rem, 0.9vh, 0.75rem);color:#fff}
+#approach .ap-sym .sym-svg{width:clamp(60px,7.5vh,90px);height:clamp(60px,7.5vh,90px);stroke-width:0.85px!important;stroke:rgba(255,255,255,.88);transition:transform .5s cubic-bezier(.16,1,.3,1),stroke .3s}
+#approach .ap-sym .sym-svg *{stroke-width:0.85px!important}
+#approach .ac:hover .ap-sym .sym-svg{transform:scale(1.08);stroke:#fff}
+#approach .ac h3{font-size:clamp(0.88rem,1.05vw,1.05rem)!important;font-weight:600!important;letter-spacing:.1em!important;color:#fff!important;margin-bottom:0.35rem!important;text-transform:uppercase;text-align:center;width:100%}
+#approach .ac p{font-size:clamp(0.74rem,0.8vw,0.82rem);line-height:1.55;color:rgba(255,255,255,.75);margin:0 auto;max-width:18.5rem;text-align:center}
+#approach .approach-action{margin-top:clamp(0.85rem,1.6vh,1.5rem);display:flex;justify-content:center;align-items:center;width:100%}
+#approach .approach-link{font-size:0.6875rem!important;letter-spacing:.22em!important;text-transform:uppercase;color:rgba(255,255,255,.75)!important;border:none!important;padding-bottom:0.25rem!important;transition:all .3s ease;background:transparent;cursor:pointer}
+#approach .approach-link:hover{color:#fff!important;border:none!important;letter-spacing:.25em!important}
+@media(max-width:768px){
+  #approach{height:auto!important;min-height:auto!important;max-height:none!important;overflow:visible!important;padding:4.5rem 1.5rem 3rem 1.5rem!important}
+  #approach .wrap{height:auto!important;max-height:none!important;justify-content:flex-start!important}
+  #approach .ag{grid-template-columns:repeat(2,1fr)!important;gap:1.5rem!important}
+}
+@media(max-width:960px){
+  .founder-block{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:1.75rem;
+  }
+  .founder-portrait-wrap{
+    max-width:260px;
+    margin:0 auto;
+  }
+  .founder-content{
+    text-align:center;
+  }
+  .founder-quote{
+    padding-left:0;
+    border-left:none;
+    border-top:1px solid rgba(255,255,255,0.2);
+    padding-top:1.25rem;
+  }
+  .about-cols{grid-template-columns:1fr;gap:2rem}
+  .about-exp-bar{grid-template-columns:1fr;gap:1rem}
+  .ag{grid-template-columns:repeat(2,1fr);gap:2.5rem}
+}
+@media(max-width:640px){
+  .ag{grid-template-columns:1fr;gap:2rem}
+  .about-logos-track{flex-wrap:wrap;justify-content:center;gap:1.5rem}
+  .about-logo-item{flex:0 0 40%}
+}
+@media (max-height: 880px) and (min-width: 961px) {
+  #about {
+    padding: clamp(5.25rem, 8vh, 6.25rem) 0 clamp(2.5rem, 4vh, 3.5rem) 0 !important;
+    scroll-margin-top: 5.25rem !important;
+  }
+  #about .wrap {
+    gap: clamp(1.15rem, 2vh, 1.75rem) !important;
+  }
+  .about-cover {
+    margin-bottom: clamp(0.4rem, 0.8vh, 0.75rem) !important;
+  }
+  .about-cover-eyebrow {
+    margin-bottom: 0.35rem !important;
+  }
+  .about-cover-h {
+    margin-bottom: 0.25rem !important;
+  }
+  .founder-block {
+    grid-template-columns: clamp(170px, 16vw, 215px) 1fr !important;
+    gap: clamp(1.5rem, 2.8vw, 2.5rem) !important;
+    padding-bottom: clamp(1rem, 2vh, 1.5rem) !important;
+  }
+  .founder-portrait-wrap {
+    max-width: 215px !important;
+    max-height: clamp(210px, 30vh, 270px) !important;
+  }
+  .founder-role {
+    margin-bottom: 0.35rem !important;
+    font-size: 0.6875rem !important;
+  }
+  .founder-name {
+    font-size: clamp(0.95rem, 1.25vw, 1.15rem) !important;
+    margin: 0 0 clamp(0.4rem, 0.8vh, 0.65rem) 0 !important;
+  }
+  .founder-quote {
+    font-size: clamp(0.82rem, 0.95vw, 0.92rem) !important;
+    line-height: 1.55 !important;
+    padding-left: 0.85rem !important;
+    margin-bottom: clamp(0.4rem, 0.8vh, 0.65rem) !important;
+  }
+  .founder-subtext {
+    font-size: clamp(0.72rem, 0.8vw, 0.8rem) !important;
+    line-height: 1.5 !important;
+  }
+  .about-col h3 {
+    margin-bottom: 0.3rem !important;
+    font-size: 0.82rem !important;
+  }
+  .about-col p {
+    margin-bottom: 0.35rem !important;
+    line-height: 1.55 !important;
+    font-size: clamp(0.78rem, 0.85vw, 0.82rem) !important;
+  }
+  .about-institutional-block {
+    gap: clamp(0.65rem, 1.3vh, 1.1rem) !important;
+  }
+  .about-exp-bar {
+    padding-top: clamp(0.65rem, 1.3vh, 1.1rem) !important;
+    gap: clamp(1.5rem, 3vw, 2.5rem) !important;
+  }
+  .exp-num {
+    font-size: clamp(1.5rem, 2.2vw, 2rem) !important;
+  }
+  .exp-txt {
+    font-size: clamp(0.78rem, 0.85vw, 0.82rem) !important;
+    line-height: 1.5 !important;
+  }
+  .about-logos-title {
+    margin-bottom: 0.45rem !important;
+  }
+  .about-logos-track {
+    gap: 1rem 1.75rem !important;
+  }
+  .about-logo-item {
+    height: clamp(24px, 3.2vh, 30px) !important;
+  }
+  /* Approach section laptop viewport optimization - 2-block balanced space-evenly */
+  #approach {
+    height: 100vh !important;
+    height: 100dvh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    padding-top: 5.25rem !important;
+    padding-bottom: 0 !important;
+    padding-left: clamp(1.5rem, 4vw, 4rem) !important;
+    padding-right: clamp(1.5rem, 4vw, 4rem) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    scroll-margin-top: -5.5rem !important;
+  }
+  #approach .wrap {
+    height: 100% !important;
+    max-height: 100% !important;
+    width: 100% !important;
+    max-width: 1360px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    flex: 1 !important;
+    box-sizing: border-box !important;
+  }
+  .approach-cover {
+    width: 100% !important;
+    max-width: 76rem !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    border-bottom: 1px solid var(--line, rgba(255,255,255,0.15)) !important;
+    padding-bottom: clamp(0.45rem, 1vh, 0.95rem) !important;
+    flex: 0 0 auto !important;
+  }
+  .approach-eyebrow {
+    margin-bottom: clamp(0.2rem, 0.4vh, 0.32rem) !important;
+    font-size: 0.625rem !important;
+    display: block !important;
+  }
+  .approach-wordmark-wrap {
+    margin-bottom: clamp(0.25rem, 0.5vh, 0.45rem) !important;
+    gap: clamp(0.5rem, 1.2vw, 1rem) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .approach-wordmark-wrap .wordmark-svg {
+    height: clamp(0.92rem, 1.35vw, 1.35rem) !important;
+    width: auto !important;
+    fill: #fff !important;
+    display: block !important;
+  }
+  .approach-desc {
+    font-size: clamp(0.72rem, 0.78vw, 0.84rem) !important;
+    line-height: 1.48 !important;
+    max-width: 52rem !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: rgba(255,255,255,0.8) !important;
+  }
+  .approach-healer {
+    margin-top: clamp(0.2rem, 0.4vh, 0.32rem) !important;
+    display: block !important;
+  }
+  .approach-framework-wrap {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+  }
+  .approach-framework-intro {
+    margin-top: 0 !important;
+    margin-bottom: clamp(0.35rem, 0.8vh, 0.75rem) !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .approach-framework-title {
+    font-size: 0.625rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+  .approach-sub {
+    font-size: clamp(0.66rem, 0.72vw, 0.74rem) !important;
+    line-height: 1.38 !important;
+  }
+  #approach .ag {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: clamp(0.75rem, 1.8vw, 2.25rem) !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    justify-items: center !important;
+  }
+  #approach .ap-sym {
+    height: clamp(42px, 6.2vh, 68px) !important;
+    margin-bottom: 0.25rem !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #approach .ap-sym .sym-svg {
+    width: clamp(36px, 5.2vh, 56px) !important;
+    height: clamp(36px, 5.2vh, 56px) !important;
+    stroke-width: 0.85px !important;
+  }
+  #approach .ac h3 {
+    font-size: clamp(0.7rem, 0.76vw, 0.76rem) !important;
+    margin-bottom: 0.15rem !important;
+  }
+  #approach .ac p {
+    font-size: clamp(0.64rem, 0.68vw, 0.7rem) !important;
+    line-height: 1.4 !important;
+    max-width: 16rem !important;
+  }
+  #approach .approach-action {
+    margin-top: clamp(0.5rem, 1.2vh, 1.15rem) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Hidden SVG Definitions for all 8 letters -->
+<!-- Shared Architectural Glyph Definitions for MYA Logo Typography (100% Seamless Single-Path Contours) -->
+<svg id="mya-glyphs" style="display:none;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- M: Seamless 1-piece closed polygon pixel-traced from logo-m.png -->
+    <path id="mya-m" d="M 0,225 L 0,0 L 20,0 L 139,137 L 257,0 L 277,0 L 277,225 L 250,225 L 250,58 L 145,171 L 133,171 L 27,58 L 27,225 Z" />
+    
+    <!-- Y: Exact mathematical polygon pixel-traced from logo-y.png (100% parallel arms, uniform 27px stroke, zero seam) -->
+    <path id="mya-y" d="M 0,0 L 33,0 L 129.5,110 L 226,0 L 259,0 L 143,132 L 143,225 L 116,225 L 116,132 Z" />
+
+    <!-- A: Seamless 1-piece closed polygon pixel-traced from logo-a.png -->
+    <path id="mya-a" d="M 148,0 L 158,0 L 306,225 L 274,225 L 153,38 L 32,225 L 0,225 Z" />
+
+    <!-- T: Architectural Monoline Seamless 1-piece Polygon -->
+    <path id="mya-t" d="M 0,0 L 220,0 L 220,27 L 123.5,27 L 123.5,225 L 96.5,225 L 96.5,27 L 0,27 Z" />
+
+    <!-- R: Seamless Monoline 1-piece Closed Contour (Zero broken lines, continuous 27px stroke) -->
+    <path id="mya-r" fill-rule="evenodd" d="M 0,0 L 145,0 C 188,0 218,27 218,60 C 218,90 192,114 156,118 L 232,225 L 195,225 L 126,120 L 27,120 L 27,225 L 0,225 Z M 27,27 L 142,27 C 168,27 191,41 191,60 C 191,79 168,93 142,93 L 27,93 Z" />
+
+    <!-- N: Architectural Monoline Seamless 1-piece Polygon (Zero Broken Seams) -->
+    <path id="mya-n" d="M 0,0 L 27,0 L 213,184 L 213,0 L 240,0 L 240,225 L 213,225 L 27,41 L 27,225 L 0,225 Z" />
+
+    <!-- L: Architectural Monoline Seamless 1-piece Polygon -->
+    <path id="mya-l" d="M 0,0 L 27,0 L 27,198 L 190,198 L 190,225 L 0,225 Z" />
+
+    <!-- U: Architectural Monoline Seamless 1-piece Path -->
+    <path id="mya-u" fill-rule="evenodd" d="M 0,0 L 27,0 L 27,115 C 27,165 55,198 120,198 C 185,198 213,165 213,115 L 213,0 L 240,0 L 240,115 C 240,180 200,225 120,225 C 40,225 0,180 0,115 Z" />
+  </defs>
+</svg>
+
+<div class="preview-nav">
+  <div class="preview-brand">MYA Architecture &amp; Urban Design &mdash; Relocation &amp; Founder Preview</div>
+  <div class="preview-actions">
+    <button class="btn-toggle active" id="btn-bw" onclick="setPhotoTone('bw')">Foto: Hitam Putih</button>
+    <button class="btn-toggle" id="btn-col" onclick="setPhotoTone('color')">Foto: Warna</button>
+    <span style="color:var(--dim);margin:0 0.5rem">|</span>
+    <button class="btn-toggle active" id="btn-en" onclick="setLanguage('en')">English</button>
+    <button class="btn-toggle" id="btn-id" onclick="setLanguage('id')">Bahasa Indonesia</button>
+  </div>
+</div>
+
+<!-- Preview Banner of Splash Screen Wordmark comparison -->
+<div style="background:#0a0a0a;border-bottom:1px solid var(--line);padding:2rem 1.5rem;text-align:center;">
+  <span style="font-size:0.6875rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dim);display:block;margin-bottom:0.75rem;">Simulasi Tampilan Awal Sekali Halaman (Splash Screen M - Y - A)</span>
+  <div style="max-width:560px;margin:0 auto;padding:1.5rem;border:1px solid rgba(255,255,255,0.12);border-radius:4px;background:#000;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;padding:0 1rem;">
+      <img src="images/logo-m.png" alt="M" style="height:38px;object-fit:contain;">
+      <img src="images/logo-y.png" alt="Y" style="height:38px;object-fit:contain;">
+      <img src="images/logo-a.png" alt="A" style="height:38px;object-fit:contain;">
+    </div>
+    <!-- The Subtitle with Logo Font Style MΛTRΛ • YΛNTRΛ • ΛLUNΛ -->
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:0 0.25rem;">
+      <div style="width:31.7%;display:flex;justify-content:center;">
+        <svg viewBox="0 0 1600 225" style="height:1.15rem;width:auto;fill:#fff;"><use href="#mya-m" x="0"/><use href="#mya-a" x="345"/><use href="#mya-t" x="715"/><use href="#mya-r" x="1000"/><use href="#mya-a" x="1285"/></svg>
+      </div>
+      <div style="width:29.65%;display:flex;justify-content:center;">
+        <svg viewBox="0 0 1890 225" style="height:1.15rem;width:auto;fill:#fff;"><use href="#mya-y" x="0"/><use href="#mya-a" x="330"/><use href="#mya-n" x="700"/><use href="#mya-t" x="1005"/><use href="#mya-r" x="1290"/><use href="#mya-a" x="1575"/></svg>
+      </div>
+      <div style="width:34.21%;display:flex;justify-content:center;">
+        <svg viewBox="0 0 1550 225" style="height:1.15rem;width:auto;fill:#fff;"><use href="#mya-a" x="0"/><use href="#mya-l" x="370"/><use href="#mya-u" x="625"/><use href="#mya-n" x="930"/><use href="#mya-a" x="1235"/></svg>
+      </div>
+    </div>
+    <div style="margin-top:1.25rem;font-size:0.7rem;letter-spacing:0.24em;color:rgba(255,255,255,0.6);text-transform:uppercase;">
+      ARCHITECTURE &amp; URBAN DESIGN
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SECTION 1: ABOUT (STUDIO LEADERSHIP & FOUNDER) ==================== -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-cover">
+      <span class="about-cover-eyebrow" data-i="about_e">Studio Leadership &amp; 27+ Years Lineage</span>
+      <h2 class="about-cover-h" data-i="about_main_title">A Practice Built from Inside Development</h2>
+    </div>
+
+    <!-- Founder Leadership Spotlight -->
+    <div class="founder-block">
+      <div class="founder-portrait-wrap">
+        <img id="founder-img" src="images/founder.jpg" alt="M. Yarkasih, S.T., M.T." class="founder-portrait-img">
+      </div>
+      <div class="founder-content">
+        <span class="founder-role" data-i="founder_role">Founder &amp; Principal Architect / Urban Designer</span>
+        <h3 class="founder-name">M. Yarkasih, S.T., M.T.</h3>
+        <blockquote class="founder-quote" data-i="founder_quote">
+          &ldquo;After over 27 years shaping masterplans from the developer’s side of the table, I have learned that the true measure of architecture is not the grandeur of what we build, but the quiet depth of healing a place returns to the human soul.&rdquo;
+        </blockquote>
+        <p class="founder-subtext" data-i="founder_subtext">
+          Leading a principal atelier grounded in institutional developer rigor, spatial geometry, and the holistic unity of ALUNA.
+        </p>
+      </div>
+    </div>
+
+    <!-- Our Story & Our Culture -->
+    <div class="about-cols">
+      <div class="about-col">
+        <h3 data-i="story">Our Story</h3>
+        <p data-i="story_p">We did not begin as observers of development. We began inside it, at BSD City, Sentul Nirwana, Binakarya, MNC Land and CFLD, where design had to answer to land, capital and time. After more than 27 years, we carry that discipline into independent practice: architecture a developer can trust, because we have sat on their side of the table.</p>
+        <button class="link" data-aboutkey="story" data-i="story_l">Read Full Story &rarr;</button>
+      </div>
+      <div class="about-col">
+        <h3 data-i="culture">Our Culture</h3>
+        <p data-i="culture_p">We start with questions, not forms: who will live here, what the land allows, what the numbers can carry. We hold every plan to measure and precision, and keep it practical enough to be built. The result is work that is rigorous in its logic and generous in its experience.</p>
+        <button class="link" data-aboutkey="culture" data-i="culture_l">View Culture Detail &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Institutional Experience Bar & Logos Track -->
+    <div class="about-institutional-block">
+      <div class="about-exp-bar">
+        <div class="about-exp-metric">
+          <div class="exp-num" data-i="yr_h">27+ Years</div>
+          <div class="exp-badge" data-i="yr_badge">Institutional &amp; Independent Practice</div>
+        </div>
+        <div class="exp-txt" data-i="yr_p">Inside some of Indonesia's largest developments, we followed land from strategy to masterplan to architecture, then through construction to handover, so we design with the whole journey in mind.</div>
+      </div>
+      <div class="about-logos">
+        <span class="about-logos-title" data-i="about_logos_title">WHERE OUR EXPERIENCE WAS BUILT</span>
+        <div class="about-logos-track">
+          <div class="about-logo-item" title="PT Amman Mineral Nusa Tenggara">
+            <img src="images/logos/amman-mineral.png" alt="Amman Mineral" class="about-logo-img">
+          </div>
+          <div class="about-logo-item" title="CFLD International">
+            <img src="images/logos/cfld.png" alt="CFLD" class="about-logo-img">
+          </div>
+          <div class="about-logo-item" title="PT Dian Swastatika Sentosa Tbk">
+            <img src="images/logos/dssa.png" alt="DSSA" class="about-logo-img">
+          </div>
+          <div class="about-logo-item" title="PT MNC Land Tbk">
+            <img src="images/logos/mnc-land.png" alt="MNC Land" class="about-logo-img">
+          </div>
+          <div class="about-logo-item" title="Sentul Nirwana">
+            <img src="images/logos/sentul-nirwana.png" alt="Sentul Nirwana" class="about-logo-img">
+          </div>
+          <div class="about-logo-item" title="PT Binakarya Propertindo Group">
+            <img src="images/logos/binakarya.png" alt="Binakarya" class="about-logo-img binakarya-scale">
+          </div>
+          <div class="about-logo-item" title="BSD City (Sinar Mas Land)">
+            <img src="images/logos/bsd-city.png" alt="BSD City" class="about-logo-img bsd-scale">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== SECTION 2: APPROACH (THE PRACTICE & PHILOSOPHY + ALUNA FRAMEWORK) ==================== -->
+<section id="approach">
+  <div class="wrap">
+    <!-- Relocated The Practice & Philosophy with MYA Logo Font -->
+    <div class="approach-cover">
+      <span class="approach-eyebrow" data-i="approach_eyebrow">The Practice &amp; Philosophy</span>
+      <div class="approach-wordmark-wrap" role="heading" aria-level="2" aria-label="MATRA · YANTRA · ALUNA">
+        <svg class="wordmark-svg" viewBox="0 0 1610 225" aria-hidden="true"><use href="#mya-m" x="0"/><use href="#mya-a" x="345"/><use href="#mya-t" x="715"/><use href="#mya-r" x="1000"/><use href="#mya-a" x="1297"/></svg>
+        <span class="wordmark-dot" aria-hidden="true">&bull;</span>
+        <svg class="wordmark-svg" viewBox="0 0 1895 225" aria-hidden="true"><use href="#mya-y" x="0"/><use href="#mya-a" x="325"/><use href="#mya-n" x="695"/><use href="#mya-t" x="1000"/><use href="#mya-r" x="1285"/><use href="#mya-a" x="1582"/></svg>
+        <span class="wordmark-dot" aria-hidden="true">&bull;</span>
+        <svg class="wordmark-svg" viewBox="0 0 1550 225" aria-hidden="true"><use href="#mya-a" x="0"/><use href="#mya-l" x="370"/><use href="#mya-u" x="625"/><use href="#mya-n" x="930"/><use href="#mya-a" x="1235"/></svg>
+      </div>
+      <p class="approach-desc" data-i="mya_desc">
+        <strong>Matra</strong> gives us the measure of human proportion; <strong>Yantra</strong> guides the precision of every line. Together, they are the instruments in our hands. Through this quiet discipline, <strong>ALUNA</strong> fuses Architecture, Landscape, Urban Nature, and Art into one holistic whole &mdash; transforming the rigor of logic into a living sanctuary.
+        <span class="approach-healer">Every design is created to gently heal the soul of those who dwell within it.</span>
+      </p>
+    </div>
+
+    <!-- The ALUNA Framework Cards Wrapped -->
+    <div class="approach-framework-wrap">
+      <div class="approach-framework-intro">
+        <span class="approach-framework-title" data-i="ap_e">The ALUNA Framework</span>
+        <p class="approach-sub" data-i="ap_sub">From a territory to a single room, every design carries all four.</p>
+      </div>
+
+      <div class="ag">
+        <div class="ac">
+          <div class="sc-sym ap-sym">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round" class="sym-svg">
+              <line x1="6" y1="10" x2="42" y2="10" stroke-width="1.8"/>
+              <line x1="14" y1="10" x2="14" y2="38" stroke-width="1.8"/>
+              <line x1="34" y1="10" x2="34" y2="38" stroke-width="1.8"/>
+              <line x1="10" y1="38" x2="38" y2="38" stroke-width="1.8"/>
+              <rect x="10" y="10" width="28" height="28" opacity=".25" stroke-dasharray="2 3"/>
+              <line x1="24" y1="10" x2="24" y2="38" stroke-dasharray="2 2" opacity=".4"/>
+              <line x1="19" y1="10" x2="19" y2="38" opacity=".25"/>
+              <line x1="29" y1="10" x2="29" y2="38" opacity=".25"/>
+              <circle cx="24" cy="21" r="5" stroke-dasharray="2 2" opacity=".45"/>
+              <circle cx="24" cy="21" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 data-i="ap1_t">01 Architecture (A)</h3>
+          <p data-i="ap1_p">Clear structure, human proportion and honest materials. Buildings that shelter people and make daily life easier.</p>
+        </div>
+        <div class="ac">
+          <div class="sc-sym ap-sym">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round" class="sym-svg">
+              <path d="M6 38c7-3 13 1 20-3s10-6 16-5" opacity=".35"/>
+              <path d="M6 31c8-4 15 2 22-3s9-5 14-4" opacity=".6"/>
+              <path d="M6 24c6-3 13 0 19-4s10-3 17 0"/>
+              <path d="M24 6c-5.5 0-10 4.2-10 9.5 0 2.2.8 4.2 2.2 5.8C18 23.5 24 25 24 25s6-1.5 7.8-3.7c1.4-1.6 2.2-3.6 2.2-5.8 0-5.3-4.5-9.5-10-9.5z" stroke-width="1.2"/>
+              <line x1="24" y1="13" x2="24" y2="32" opacity=".5"/>
+              <path d="M20 22l4 4 4-4" opacity=".4"/>
+            </svg>
+          </div>
+          <h3 data-i="ap2_t">02 Landscape (L)</h3>
+          <p data-i="ap2_p">The open ground we design: terrain, planting, water and paths. Outdoor space that shades, cools and invites people outside.</p>
+        </div>
+        <div class="ac">
+          <div class="sc-sym ap-sym">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round" class="sym-svg">
+              <rect x="6" y="8" width="11" height="11" rx="1.5" opacity=".45"/>
+              <rect x="6" y="25" width="11" height="15" rx="1.5" opacity=".45"/>
+              <rect x="31" y="8" width="11" height="15" rx="1.5" opacity=".45"/>
+              <rect x="31" y="29" width="11" height="11" rx="1.5" opacity=".45"/>
+              <path d="M20 4c0 10 8 14 8 20s-8 10-8 20" stroke-width="1.6"/>
+              <path d="M25 4c0 9 7 13 7 20s-7 11-7 20" opacity=".45" stroke-dasharray="2 3"/>
+              <circle cx="24" cy="24" r="3.5" fill="none" stroke-width="1.2"/>
+              <circle cx="24" cy="24" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 data-i="ap3_t">03 Urban Nature (UN)</h3>
+          <p data-i="ap3_p">The living city: trees, soil, water and wildlife, kept connected. Habitat for other species, and daily contact with nature for people.</p>
+        </div>
+        <div class="ac">
+          <div class="sc-sym ap-sym">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round" class="sym-svg">
+              <circle cx="24" cy="24" r="18" stroke-dasharray="2 3" opacity=".35"/>
+              <circle cx="24" cy="24" r="13" stroke-width="1.1"/>
+              <polygon points="24,6 42,24 24,42 6,24" stroke-width="1.4"/>
+              <rect x="15" y="15" width="18" height="18" opacity=".55" stroke-width="1.1"/>
+              <line x1="24" y1="6" x2="24" y2="42" stroke-dasharray="2 2" opacity=".35"/>
+              <line x1="6" y1="24" x2="42" y2="24" stroke-dasharray="2 2" opacity=".35"/>
+              <circle cx="24" cy="24" r="1.8" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 data-i="ap4_t">04 Art (A)</h3>
+          <p data-i="ap4_p">Art in its many forms, woven into the design from the start. It gives a place meaning, identity and a reason to linger.</p>
+        </div>
+      </div>
+      <div class="approach-action">
+        <button class="link approach-link" data-aboutkey="philosophy" data-i="ap_link">THE IDEA BEHIND ALUNA &rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const DICT = {
+  en: {
+    about_e: "Studio Leadership &amp; 27+ Years Lineage",
+    about_main_title: "A Practice Built from Inside Development",
+    founder_role: "Founder &amp; Principal Architect / Urban Designer",
+    founder_quote: "&ldquo;After over 27 years shaping masterplans from the developer’s side of the table, I have learned that the true measure of architecture is not the grandeur of what we build, but the quiet depth of healing a place returns to the human soul.&rdquo;",
+    founder_subtext: "Leading a principal atelier grounded in institutional developer rigor, spatial geometry, and the holistic unity of ALUNA.",
+    story: "Our Story",
+    story_p: "We did not begin as observers of development. We began inside it, at BSD City, Sentul Nirwana, Binakarya, MNC Land and CFLD, where design had to answer to land, capital and time. After more than 27 years, we carry that discipline into independent practice: architecture a developer can trust, because we have sat on their side of the table.",
+    story_l: "Read Full Story &rarr;",
+    culture: "Our Culture",
+    culture_p: "We start with questions, not forms: who will live here, what the land allows, what the numbers can carry. We hold every plan to measure and precision, and keep it practical enough to be built. The result is work that is rigorous in its logic and generous in its experience.",
+    culture_l: "View Culture Detail &rarr;",
+    yr_h: "27+ Years",
+    yr_badge: "Institutional &amp; Independent Practice",
+    yr_p: "Inside some of Indonesia's largest developments, we followed land from strategy to masterplan to architecture, then through construction to handover, so we design with the whole journey in mind.",
+    about_logos_title: "WHERE OUR EXPERIENCE WAS BUILT",
+    approach_eyebrow: "The Practice &amp; Philosophy",
+    mya_desc: "<strong>Matra</strong> gives us the measure of human proportion; <strong>Yantra</strong> guides the precision of every line. Together, they are the instruments in our hands. Through this quiet discipline, <strong>ALUNA</strong> fuses Architecture, Landscape, Urban Nature, and Art into one holistic whole &mdash; transforming the rigor of logic into a living sanctuary.<span class=\"approach-healer\">Every design is created to gently heal the soul of those who dwell within it.</span>",
+    ap_e: "The ALUNA Framework",
+    ap_sub: "From a territory to a single room, every design carries all four.",
+    ap1_t: "01 Architecture (A)",
+    ap1_p: "Clear structure, human proportion and honest materials. Buildings that shelter people and make daily life easier.",
+    ap2_t: "02 Landscape (L)",
+    ap2_p: "The open ground we design: terrain, planting, water and paths. Outdoor space that shades, cools and invites people outside.",
+    ap3_t: "03 Urban Nature (UN)",
+    ap3_p: "The living city: trees, soil, water and wildlife, kept connected. Habitat for other species, and daily contact with nature for people.",
+    ap4_t: "04 Art (A)",
+    ap4_p: "Art in its many forms, woven into the design from the start. It gives a place meaning, identity and a reason to linger.",
+    ap_link: "THE IDEA BEHIND ALUNA &rarr;"
+  },
+  id: {
+    about_e: "Kepemimpinan Studio &amp; Rekam Jejak 27+ Tahun",
+    about_main_title: "Praktik yang Tumbuh dari Dalam Industri Pengembangan",
+    founder_role: "Pendiri &amp; Arsitek Utama / Perancang Kota",
+    founder_quote: "&ldquo;Setelah lebih dari 27 tahun merancang di balik meja pengembang terbesar, saya memahami bahwa keberhasilan sejati sebuah karya bukanlah pada seberapa megah ia berdiri, melainkan pada seberapa dalam ruang tersebut mampu memulihkan jiwa manusia yang hidup di dalamnya.&rdquo;",
+    founder_subtext: "Memimpin studio arsitektur dan rancang kota berlandaskan kedisiplinan institusional pengembang, presisi geometri ruang, dan kesatuan holistik ALUNA.",
+    story: "Kisah Kami",
+    story_p: "Kami tidak bermula sebagai pengamat pembangunan. Kami bermula dari dalamnya, di BSD City, Sentul Nirwana, Binakarya, MNC Land, dan CFLD, di mana desain harus menjawab tantangan lahan, modal, dan waktu. Setelah lebih dari 27 tahun, kami membawa disiplin tersebut ke dalam praktik mandiri: arsitektur yang dapat dipercaya pengembang, karena kami pernah duduk di sisi meja mereka.",
+    story_l: "Baca Kisah Lengkap &rarr;",
+    culture: "Budaya",
+    culture_p: "Kami memulai dengan pertanyaan, bukan bentuk: siapa yang akan tinggal di sini, apa yang diizinkan oleh lahan, apa yang mampu ditanggung oleh angka-angka kelayakan. Kami menuntut setiap rencana pada ketepatan ukuran dan presisi, serta menjaganya tetap pragmatis untuk dapat dibangun. Hasilnya adalah karya yang lugas dalam logika dan lapang dalam rasa pengalaman ruang.",
+    culture_l: "Lihat Detail Budaya &rarr;",
+    yr_h: "27+ Tahun",
+    yr_badge: "Praktik Institusional &amp; Mandiri",
+    yr_p: "Di dalam beberapa proyek pembangunan terbesar di Indonesia, kami mengawal lahan dari strategi ke rencana induk, arsitektur, hingga konstruksi dan serah terima, sehingga kami merancang dengan pemahaman utuh atas seluruh perjalanan proyek.",
+    about_logos_title: "TEMPAT PENGALAMAN KAMI DITEMPA",
+    approach_eyebrow: "Praktik &amp; Filosofi",
+    mya_desc: "<strong>Matra</strong> adalah ukuran yang menimbang rasa; <strong>Yantra</strong> adalah presisi yang menuntun garis. Keduanya adalah piranti disiplin tempat kami berpijak. Berlandaskan dua instrumen inilah, <strong>ALUNA</strong> meleburkan Arsitektur, Lanskap, Alam Perkotaan, dan Seni menjadi satu kesatuan utuh yang holistik &mdash; mengubah ketegasan nalar menjadi ruang hidup yang bernapas.<span class=\"approach-healer\">Setiap desain hadir sebagai penyembuh jiwa bagi manusia yang tinggal di dalamnya.</span>",
+    ap_e: "Kerangka Kerja ALUNA",
+    ap_sub: "Dari skala kawasan hingga satu ruang tunggal, setiap desain memuat keempat unsur ini.",
+    ap1_t: "01 Arsitektur (A)",
+    ap1_p: "Struktur yang lugas, proporsi skala manusia, dan kejujuran material. Bangunan yang menaungi manusia dan memudahkan keseharian.",
+    ap2_t: "02 Lanskap (L)",
+    ap2_p: "Lahan terbuka yang kami rancang: kontur tanah, vegetasi, tata air, dan jalur sirkulasi. Ruang luar yang menaungi, menyejukkan, dan mengajak orang berkegiatan di luar.",
+    ap3_t: "03 Alam Perkotaan (UN)",
+    ap3_p: "Kota yang bernyawa: pepohonan, tanah hidup, tata air, dan fauna, tetap saling terhubung. Habitat bagi spesies lain, dan perjumpaan sehari-hari manusia dengan alam.",
+    ap4_t: "04 Seni (A)",
+    ap4_p: "Seni dalam beragam wujudnya, teranyam ke dalam desain sejak awal. Menghadirkan makna, identitas, dan alasan bagi orang untuk betah tinggal.",
+    ap_link: "GAGASAN DI BALIK ALUNA &rarr;"
+  }
+};
+
+function setLanguage(lang) {
+  const d = DICT[lang];
+  if(!d) return;
+  document.querySelectorAll('[data-i]').forEach(el => {
+    const k = el.dataset.i;
+    if(d[k]) el.innerHTML = d[k];
+  });
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-id').classList.toggle('active', lang === 'id');
+  document.documentElement.lang = lang;
+}
+
+function setPhotoTone(tone) {
+  const img = document.getElementById('founder-img');
+  if(!img) return;
+  if(tone === 'bw') {
+    img.src = 'images/founder-bw.jpg';
+    document.getElementById('btn-bw').classList.add('active');
+    document.getElementById('btn-col').classList.remove('active');
+  } else {
+    img.src = 'images/founder.jpg';
+    document.getElementById('btn-col').classList.add('active');
+    document.getElementById('btn-bw').classList.remove('active');
+  }
+}
+
+const params = new URLSearchParams(window.location.search);
+if(params.get('lang') === 'id') setLanguage('id');
+if(params.get('photo') === 'color') setPhotoTone('color');
+const sec = params.get('sec');
+if(sec) {
+  const el = document.getElementById(sec);
+  if(el) {
+    window.scrollTo(0, el.offsetTop);
+    document.documentElement.scrollTop = el.offsetTop;
+    document.body.scrollTop = el.offsetTop;
+    el.scrollIntoView({behavior:'instant', block:'start'});
+  }
+}
+</script>
+</body>
+</html>

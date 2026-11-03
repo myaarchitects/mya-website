@@ -1,0 +1,19 @@
+PETUNJUK FOTO PROYEK DESIGN & BUILD (4-DESIGN-BUILD)
+===================================================
+
+Folder ini khusus untuk foto-foto hasil karya bidang Rancang & Bangun / Realisasi (Design & Build).
+
+Penamaan File:
+- db-1.jpg  -> Proyek Design & Build 1
+- db-2.jpg  -> Proyek Design & Build 2
+- db-3.jpg  -> Proyek Design & Build 3
+- db-4.jpg  -> Proyek Design & Build 4
+- db-5.jpg  -> Proyek Design & Build 5
+... dan seterusnya (db-6, db-7, dst.)
+
+Format yang didukung:
+- .jpg, .jpeg, .png, .webp
+
+Rekomendasi Ukuran:
+- Rasio 1:1 (persegi, misal 1200 x 1200 px) atau 4:3 / 16:9
+- Ukuran file sekitar 300 KB - 1.5 MB per foto agar web cepat dimuat.

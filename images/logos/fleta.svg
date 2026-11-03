@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 50" fill="none">
+  <!-- FLETA Official Hexagonal 3D Isometric Prism Emblem -->
+  <g transform="translate(6, 4)">
+    <!-- Top Face -->
+    <polygon points="20,2 35.5,11 20,20 4.5,11" fill="#ffffff" opacity="0.95"/>
+    <!-- Left Face -->
+    <polygon points="4.5,13 18.5,21 18.5,39 4.5,31" fill="#ffffff" opacity="0.75"/>
+    <!-- Right Face with F-notch -->
+    <polygon points="21.5,21 35.5,13 35.5,31 21.5,39" fill="#ffffff"/>
+    <!-- Center geometric accent -->
+    <polyline points="20,20 20,40" stroke="#000000" stroke-width="1.5"/>
+    <polyline points="4.5,11 20,20 35.5,11" stroke="#000000" stroke-width="1.5" fill="none"/>
+  </g>
+  <!-- FLETA Typography -->
+  <text x="52" y="28" fill="#ffffff" font-family="'Inter', -apple-system, sans-serif" font-size="19" font-weight="800" letter-spacing="0.1em">FLETA</text>
+  <text x="53" y="40" fill="#ffffff" font-family="'Inter', -apple-system, sans-serif" font-size="6.8" font-weight="600" letter-spacing="0.22em" opacity="0.85">CO., LTD.</text>
+</svg>

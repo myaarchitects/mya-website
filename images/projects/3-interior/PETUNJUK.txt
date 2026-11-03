@@ -1,0 +1,19 @@
+PETUNJUK FOTO PROYEK INTERIOR (3-INTERIOR)
+==========================================
+
+Folder ini khusus untuk foto-foto hasil karya bidang Desain Interior & Ruang (Interior).
+
+Penamaan File:
+- int-1.jpg  -> Proyek Interior 1
+- int-2.jpg  -> Proyek Interior 2
+- int-3.jpg  -> Proyek Interior 3
+- int-4.jpg  -> Proyek Interior 4
+- int-5.jpg  -> Proyek Interior 5
+... dan seterusnya (int-6, int-7, dst.)
+
+Format yang didukung:
+- .jpg, .jpeg, .png, .webp
+
+Rekomendasi Ukuran:
+- Rasio 1:1 (persegi, misal 1200 x 1200 px) atau 4:3 / 16:9
+- Ukuran file sekitar 300 KB - 1.5 MB per foto agar web cepat dimuat.

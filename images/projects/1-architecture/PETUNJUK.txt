@@ -1,0 +1,19 @@
+PETUNJUK FOTO PROYEK ARSITEKTUR (1-ARCHITECTURE)
+==================================================
+
+Folder ini khusus untuk foto-foto hasil karya bidang Arsitektur (Architecture).
+
+Penamaan File:
+- arch-1.jpg  -> Proyek Arsitektur 1
+- arch-2.jpg  -> Proyek Arsitektur 2
+- arch-3.jpg  -> Proyek Arsitektur 3
+- arch-4.jpg  -> Proyek Arsitektur 4
+- arch-5.jpg  -> Proyek Arsitektur 5
+... dan seterusnya (arch-6, arch-7, dst.)
+
+Format yang didukung:
+- .jpg, .jpeg, .png, .webp
+
+Rekomendasi Ukuran:
+- Rasio 1:1 (persegi, misal 1200 x 1200 px) atau 4:3 / 16:9
+- Ukuran file sekitar 300 KB - 1.5 MB per foto agar web cepat dimuat.

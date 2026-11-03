@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 50" fill="none">
+  <!-- Binakarya Propertindo Group Architectural Towers Monogram -->
+  <g transform="translate(6, 6)">
+    <!-- Tower 1: Lower Left -->
+    <rect x="4" y="16" width="9" height="22" rx="1" fill="#ffffff" opacity="0.6"/>
+    <!-- Tower 2: Center Landmark High-Rise -->
+    <rect x="16" y="4" width="10" height="34" rx="1" fill="#ffffff"/>
+    <polygon points="16,4 21,0 26,4" fill="#ffffff"/>
+    <!-- Tower 3: Right Mid-Rise -->
+    <rect x="29" y="10" width="9" height="28" rx="1" fill="#ffffff" opacity="0.8"/>
+    <!-- Horizontal Baseline / Ground Line -->
+    <line x1="2" y1="38" x2="40" y2="38" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Binakarya Typography -->
+  <text x="56" y="26" fill="#ffffff" font-family="'Inter', -apple-system, sans-serif" font-size="17" font-weight="800" letter-spacing="0.08em">BINAKARYA</text>
+  <text x="57" y="38" fill="#ffffff" font-family="'Inter', -apple-system, sans-serif" font-size="6.5" font-weight="600" letter-spacing="0.22em" opacity="0.85">PROPERTINDO GROUP</text>
+</svg>

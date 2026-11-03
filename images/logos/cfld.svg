@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" fill="none">
+  <!-- CFLD Emblem: 4 overlapping dynamic petals forming central star -->
+  <g transform="translate(4, 5)">
+    <path d="M22 2 C31 2 38 9 38 18 C38 27 31 34 22 34 C13 34 6 27 6 18 C6 9 13 2 22 2 Z" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.3"/>
+    <path d="M22 4 C27 12 32 17 40 22 C32 27 27 32 22 40 C17 32 12 27 4 22 C12 17 17 12 22 4 Z" fill="#ffffff"/>
+    <circle cx="22" cy="22" r="3.5" fill="#000000"/>
+  </g>
+  <!-- CFLD Typography -->
+  <text x="56" y="27" fill="#ffffff" font-family="'Inter', -apple-system, sans-serif" font-size="20" font-weight="800" letter-spacing="0.08em">CFLD</text>
+  <text x="57" y="41" fill="#ffffff" font-family="'Inter', -apple-system, sans-serif" font-size="7.5" font-weight="500" letter-spacing="0.28em" opacity="0.8">INTERNATIONAL</text>
+</svg>
